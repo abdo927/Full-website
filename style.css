@@ -1,0 +1,84 @@
+/* Navigation Bar */
+nav {
+    background-color: rgb(21, 3, 9);
+    color: #fff;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Background Slider */
+  .background-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .background-slider img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+  }
+  .background-slider img.active {
+    opacity: 1;
+  }
+
+
+
+  .slider {
+    width: 100%; /* Set the desired width of the slider */
+    height: 300px; /* Set the desired height of the slider */
+    
+  }
+  
+  .slides {
+    display: flex;
+    width: 50%; /* Set the width to accommodate all slides */
+    animation: slide 30s  linear;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Animation */
+  @keyframes slide {
+    0% ,100%{
+      transform: translateX(0);
+    }
+    33.33% {
+      transform: translateX(-100%);
+    }
+    66.66% {
+      transform: translateX(-200%);
+    }
+    /* 100% {
+      transform: translateX(-300%);
+    } */
+  }
+
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
